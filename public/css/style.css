@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.main{
+    background-image: linear-gradient(pink,white);
+    background-repeat: no-repeat;
+}
+
+.fontColor{
+    color: #dc001f;
+}
+
+.btnColor{
+    background-color: #fa3947;
+}
+
+.headerButton{
+    padding: 5px 25px 5px 25px;
+    font-size: 17px;
+    border: none;
+    border-radius: 20px;
+    background-color: #fa3947;
+    color: white;
+    margin-left: 10%;
+}
+
+.searchBarButton{
+    background-color: #ff6a00;
+    border: none;
+    padding: 5px 25px 5px 25px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-left: none;
+    font-size: 15px;
+}
+
+.searchbar{
+    border-radius: 20px 0px 0px 20px;
+    border: 2px solid #ff6a00;
+    outline: none;
+}
+
+.navLinktext{
+    font-size: 12px;
+    color: rgba(61, 61, 61, 0.8);
+    text-decoration: none;
+}
+
+.w-calc{
+    width: calc(100% - 180px);
+}
+
+
+input::placeholder{
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+.secondaryNavLinks{
+    font-size: 14px;
+}
+
+.main-section{
+    background: rgb(255,192,203);
+    background: linear-gradient(to bottom, rgba(255,192,203,1) 0%, rgba(242,243,247,1) 40%);
+    background-size: contain;
+    margin: 0%;
+}
+
+.mainSectionLeftLinks{
+    text-decoration: none;
+    color: rgb(93, 92, 92);
+    font-size: 15px;
+}
+
+.myMarkets{
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(168, 168, 168, 0.562);
+}
+
+.main-section-rightbox{
+    background-image: url(https://s.alicdn.com/@img/imgextra/i4/O1CN01nQTlRE1OKguS9Nfvx_!!6000000001687-2-tps-240-115.png);
+}
+
+.mainSectionRightboxButton1{
+    border-radius: 20px;
+    padding: 2px 12px 2px 12px;
+    font-size: 14px;
+    
+}
+
+.mainSectionRightboxButton2{
+    width: 100%;
+    background-color: #ff4f00;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 5px;
+    border: none;
+}
+
+.rightboxfont{
+    font-size: 18px
+}
+
+.products1BgColor{
+    background-color: #f7f7f7;
+}
+
+.products1-desc1{
+    font-size: 14px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.products1-desc2{
+    font-size: 14px;
+    text-align: center;
+    color: rgb(99, 99, 99);
+}
+
+.backgroundProducts{
+    background-image: linear-gradient(#f2f3f7,#f2f3f7);
+}
+
+.customized-products-color{
+    background-color: #f2f3f7;
+    height: 90%;
+    width: 90%;
+    margin-left: 5px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.cons-elec-left{
+    background-image: url(https://img.alicdn.com/tfs/TB1J5jev7voK1RjSZPfXXXPKFXa-300-320.png);
+    background-size:100% 100%;
+    /* height: 240px; */
+    height: auto;
+    margin: 0%;
+}
+.apparel-left{
+    background-image: url(https://img.alicdn.com/tfs/TB1ZXXNIgHqK1RjSZFkXXX.WFXa-300-320.jpg);
+    background-size:100% 100%;
+    /* height: 240px; */
+    height: auto;
+    margin: 0%;
+}
+.vehicle-accessories-left{
+    background-image: url(https://img.alicdn.com/tfs/TB1uW2kv3HqK1RjSZFkXXX.WFXa-300-320.png);
+    background-size:100% 100%;
+    /* height: 240px; */
+    height: auto;
+    margin: 0%;
+}
+
+.cons-button{
+    border: none;
+    background-color: white;
+    border-radius: 20px;
+    font-size: 14px;
+    padding: 8px 15px 8px 15px;
+    margin-left: 35px;
+    margin-top: 20px
+}
+
+.view-more{
+    background-color: #f60;
+    color: white;
+    border: none;
+    margin-left: 14px;
+    margin-top: 4px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 20px;
+}
+
+.ReqQuotationLeft{
+    background-image: url("https://img.alicdn.com/tfs/TB1RrnvyuT2gK0jSZFvXXXnFXXa-800-375.png");
+    height: 350px;
+}
+
+.ReqQuotationLeftBtn{
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 20px;
+    border: 1px solid white;
+    padding: 5px 10px 5px 10px;
+    margin-left: 45px;
+    margin-top: 15px
+}
+
+.ReqQuotationRight{
+    height: 350px;
+    border: 6px solid rgb(218, 217, 217);
+}
+
+.ReqQuotationRightBtn{
+    background-color: #f60;
+    margin-top: 10px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+}
+
+.wkd{
+    height: 200px;
+}
+
+.ourTradeHeading{
+    color: #666;
+}
+
+.ourTradeHeading2{
+    font-size: 14px;
+    color: #666
+}
+
+.ourTradeText{
+    font-size: 13px;
+    color: rgba(102,102,102,.8);
+}

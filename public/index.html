@@ -1,0 +1,1422 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Assignment 8 (4-6-22)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+        
+    <!-- banner above header start -->
+
+    <div class="row">
+        <div class="col-md-12">
+            <div>
+              <a href="#"><img width="100%" src="https://img.alicdn.com/imgextra/i1/O1CN01ub2u5w1IEqAUqcy5w_!!6000000000862-2-tps-1920-60.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <!-- banner above header end -->
+
+     <!-- navbar start -->
+        <div class="row">
+        <div class="navBar d-flex justify-content-center border-bottom">
+          <nav class="navbar navbar-expand-lg">
+              <!-- <div class="container-fluid"> -->
+                <a class="navbar-brand" href="#">
+                    <img width="185px" height="25px" src="https://docs.alibabagroup.com/assets2/images/en/news/library_logos_alibaba_large.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <form class="d-flex" role="search">
+                  <div class="input-group">
+                      <input type="search" class="p-1 border-end-0 searchbar w-calc" placeholder="What are you looking for..." aria-label="Search" aria-describedby="search-addon" size="85" />
+                      <button type="button" class="searchBarButton fs-6 text-white"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search me-2 pb-1" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <circle cx="10" cy="10" r="7" />
+                        <line x1="21" y1="21" x2="15" y2="15" />
+                      </svg>Search</button>
+                    </div>
+                </form>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item ps-2">
+                      <a class="nav-link navLinktext" href="#">
+                        <div>
+                          <div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="40" height="40" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <circle cx="12" cy="7" r="4" />
+                            <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                          </svg></div><span>Sign In</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="nav-item ps-2">
+                      <a class="nav-link navLinktext" href="#">
+                        <div>
+                          <div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-message-dots" width="40" height="40" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M4 21v-13a3 3 0 0 1 3 -3h10a3 3 0 0 1 3 3v6a3 3 0 0 1 -3 3h-9l-4 4" />
+                            <line x1="12" y1="11" x2="12" y2="11.01" />
+                            <line x1="8" y1="11" x2="8" y2="11.01" />
+                            <line x1="16" y1="11" x2="16" y2="11.01" />
+                          </svg></div><span>Messages</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="nav-item ps-2">
+                      <a class="nav-link navLinktext" href="#">
+                        <div>
+                          <div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-coin" width="40" height="40" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <circle cx="12" cy="12" r="9" />
+                            <path d="M14.8 9a2 2 0 0 0 -1.8 -1h-2a2 2 0 0 0 0 4h2a2 2 0 0 1 0 4h-2a2 2 0 0 1 -1.8 -1" />
+                            <path d="M12 6v2m0 8v2" />
+                          </svg></div><span>Orders</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="nav-item ps-3">
+                      <a class="nav-link navLinktext" href="#">
+                        <div>
+                          <div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="40" height="40" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <circle cx="6" cy="19" r="2" />
+                            <circle cx="17" cy="19" r="2" />
+                            <path d="M17 17h-11v-14h-2" />
+                            <path d="M6 5l14 1l-1 7h-13" />
+                          </svg></div><span>cart</span>
+                        </div>
+                      </a>
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+            </nav>
+        </div>
+      <!-- navbar end -->
+
+      <!-- secondary navigation start -->
+        <div class="row">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
+                      <div class="d-flex">
+                        <li class="nav-item ps-2 pe-2">
+                          <a class="nav-link active secondaryNavLinks border-end" aria-current="page" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-list" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                              <line x1="9" y1="6" x2="20" y2="6" />
+                              <line x1="9" y1="12" x2="20" y2="12" />
+                              <line x1="9" y1="18" x2="20" y2="18" />
+                              <line x1="5" y1="6" x2="5" y2="6.01" />
+                              <line x1="5" y1="12" x2="5" y2="12.01" />
+                              <line x1="5" y1="18" x2="5" y2="18.01" />
+                            </svg> Categories <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                            </svg></a>
+                        </li>
+                        <li class="nav-item ps-2 pe-2">
+                          <a class="nav-link active secondaryNavLinks" aria-current="page" href="#">Ready to Ship</a>
+                        </li>
+                        <li class="nav-item ps-2 pe-2">
+                          <a class="nav-link active secondaryNavLinks" aria-current="page" href="#">Personal Protective E...</a>
+                        </li>
+                        <li class="nav-item ps-2 pe-2">
+                          <a class="nav-link active secondaryNavLinks" aria-current="page" href="#">Trade Shows</a>
+                        </li>
+                        <li class="nav-item ps-2 pe-2">
+                          <a class="nav-link active secondaryNavLinks" aria-current="page" href="#">Buyer Central
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="nav-item ps-2 pe-2">
+                          <a class="nav-link active secondaryNavLinks" aria-current="page" href="#">Sell on Alibab
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="nav-item ps-2 pe-2">
+                          <a class="nav-link active secondaryNavLinks" aria-current="page" href="#">Help
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                            </svg>
+                          </a>
+                        </li>
+                      </div>
+                      <div class="d-flex ms-5">
+                        <li class="nav-item ps-2 pe-2">
+                          <a class="nav-link active secondaryNavLinks border-end" aria-current="page" href="#">Get the App</a>
+                        </li>
+                        <li class="nav-item ps-2 pe-2">
+                          <a class="nav-link active secondaryNavLinks border-end" aria-current="page" href="#">English-USD
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="nav-item ps-2 pe-2">
+                          <a class="nav-link active secondaryNavLinks" aria-current="page" href="#">Ship to:
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                            </svg>
+                          </a>
+                        </li>
+                      </div>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </div>
+      <!-- secondary navigation end -->
+
+      <div class="main-section">
+
+            <!-- banner below SN start -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="ms-auto me-auto" style="width: 55%;">
+                        <a href=""><img width="100%" src="https://img.alicdn.com/imgextra/i1/O1CN01d5i8o71LLCVzZYODI_!!6000000001282-2-tps-1110-98.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <!-- banner below SN end -->
+
+            <div class="container bg-white">
+                <div class="row">
+                  <div class="col-md-3">
+                    <div>
+                      <p class="p-3 myMarkets">MY MARKETS</p>
+                    </div>
+  
+                    <div>
+                        <div class=""><a class="p-2 mainSectionLeftLinks" href="">
+                         <span class="me-1"><img width="30px" height="30px" src="https://sc02.alicdn.com/kf/HTB12RuNUmzqK1RjSZFH7623CpXa6.png_50x50xz.jpg" alt=""></span> Consumer Electronics</a></div>
+                        <div class="p-1"><a class="p-2 mainSectionLeftLinks" href="">
+                          <span class="me-1"><img width="30px" height="30px" src="https://sc02.alicdn.com/kf/HTB1gUuPUkzoK1RjSZFl761i4VXaw.png_50x50xz.jpg" alt=""></span> Apparel</a></div>
+                        <div class="p-1"><a class="p-2 mainSectionLeftLinks" href="">
+                         <span class="me-1"><img width="30px" height="30px" src="https://sc02.alicdn.com/kf/HTB1JdWLUhTpK1RjSZR0762EwXXa6.png_50x50xz.jpg" alt=""></span> Vehicle Parts And Accessories</a></div>
+                        <div class="p-1"><a class="p-2 mainSectionLeftLinks" href="">
+                         <span class="me-1"><img width="30px" height="30px" src="https://sc02.alicdn.com/kf/HTB1AkuTUgHqK1RjSZJn762NLpXa2.png_50x50xz.jpg" alt=""></span> Sports And Entertainment</a></div>
+                        <div class="p-1"><a class="p-2 mainSectionLeftLinks" href="">
+                         <span class="me-1"><img width="30px" height="30px" src="https://sc02.alicdn.com/kf/H5e92ef24edc94162b72c331cbd6fbe6fn.png_50x50xz.jpg" alt=""></span> Machinery</a></div>
+                        <div class="p-1"><a class="p-2 mainSectionLeftLinks" href="">
+                         <span class="me-auto"><img width="35px" height="35px" src="https://sc02.alicdn.com/kf/HTB1RxCkXHys3KVjSZFn760FzpXaP.png_50x50xz.jpg" alt=""></span> Home And Garden</a></div>
+                        <div class=""><a class="p-2 mainSectionLeftLinks" href="">
+                         <span class=""><img width="35px" height="35px" src="https://sc02.alicdn.com/kf/HTB1K6G0UcfpK1RjSZFO7616nFXah.png_50x50xz.jpg" alt=""></span> Beauty And Personal Care</a></div>
+                        <div class="p-1"><a class="p-2 mainSectionLeftLinks" href="">
+                         <span class="me-2"><img width="25px" height="25px" src="https://img.alicdn.com/tfs/TB1SFxHuVY7gK0jSZKzXXaikpXa-36-36.png" alt=""></span> All Categories </a></div>
+                    </div>
+                    
+                </div>
+
+                
+                <div class="col-md-6">
+                  <div id="carouselExampleIndicators" class="carousel slide my-5" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="https://s.alicdn.com/@img/imgextra/i1/O1CN01LAUYLo1pHwAUsozhM_!!6000000005336-0-tps-990-400.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://s.alicdn.com/@img/imgextra/i3/O1CN01CcrZeI1hkmAVDkJ2Q_!!6000000004316-2-tps-990-400.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://s.alicdn.com/@img/imgextra/i2/O1CN01ONSmer1xsan4tCteQ_!!6000000006499-2-tps-990-400.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://s.alicdn.com/@img/imgextra/i2/O1CN01rYC4hI1lJzSxuJUm1_!!6000000004799-2-tps-990-400.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://gw.alicdn.com/imgextra/i2/O1CN01lOKwJa1m3Kg1irasR_!!6000000004898-0-tps-990-400.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://gw.alicdn.com/imgextra/i3/O1CN01gzakBn1wJxDeuHOcO_!!6000000006288-0-tps-990-400.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://s.alicdn.com/@img/imgextra/i4/O1CN01ypqsQb1Zy2igbbfNq_!!6000000003262-0-tps-990-400.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="main-section-rightbox my-3 p-2">
+                        <span class="">Buyer's Club</span>
+                        <span class="fw-bold d-block mb-3">US $10 off with a new supplier</span>
+                        <div class="">
+                          <button class="ms-auto text-white bg-black mainSectionRightboxButton1">View More</button>
+                        </div>
+                    </div>
+
+                    <div>
+                      <button class="ms-auto mainSectionRightboxButton2">Mid-Year Sale</button>
+                    </div>
+
+                    <div class="p-3 rightboxfont fw-bold border-bottom"><span class="mt-3"></span><span class="d-flex justify-content-end">Hot Sellers<img class="ms-5" height="60px" width="60px" src="https://s.alicdn.com/@img/imgextra/i3/O1CN01W3383U1KtGM6IHN9X_!!6000000001221-2-tps-350-350.png_100x100.jpg" alt=""></span></div>
+                    <div class="p-3 rightboxfont fw-bold border-bottom"><span class="mt-3"></span><span class="d-flex justify-content-end">New Trends Release<img class="ms-5" height="60px" width="60px" src="https://s.alicdn.com/@img/imgextra/i2/O1CN011TuFjk1awxOwxBYNY_!!6000000003395-2-tps-350-350.png_100x100.jpg" alt=""></span></div>
+                    <div class="p-3 rightboxfont fw-bold border-bottom"><span class="mt-3"></span><span class="d-flex justify-content-end">10% Off or more<img class="ms-5" height="60px" width="60px" src="https://s.alicdn.com/@img/imgextra/i1/O1CN01oycLmW22Y36LWcn5j_!!6000000007131-2-tps-350-350.png_100x100.jpg" alt=""></span></div>
+                </div>
+            </div>
+          </div>
+
+          <br>
+
+          <!-- products1 start -->
+          <div class="container">
+            <div class="row bg-white rounded">
+                <div class="col-md-4">
+                  <div class="p-2 fw-bold">New Arrivals</div class="text-center">
+                  <div class="row">
+                      <div class="col-md-4 p-1 products1BgColor">
+                        <img width="120px" height="100px" src="https://s.alicdn.com/@sc04/kf/Heaa6de41475e482daaeb8b458c783b8ao.jpg_120x120.jpg" alt="">
+                        <div class="products1-desc1">$0.74</div>
+                        <div class="products1-desc2">Trending Now</div>
+                      </div>
+                      <div class="col-md-4 p-1 products1BgColor">
+                        <img width="120px" height="100px" src="https://s.alicdn.com/@sc04/kf/Ha867cfb4e79d44229e94ccd229146647T.jpg_120x120.jpg" alt="">
+                        <div class="products1-desc1">$0.20</div>
+                        <div class="products1-desc2">Trending Now</div>
+                      </div>
+                      <div class="col-md-4 p-1 products1BgColor">
+                        <img width="120px" height="100px" src="https://s.alicdn.com/@sc04/kf/Hd25d0c79a0a74ac9845016f81df50b90d.jpg_120x120.jpg" alt="">
+                        <div class="products1-desc1">$13.00</div>
+                        <div class="products1-desc2">Trending Now</div>
+                      </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="p-2 fw-bold">Top-ranked Products</div>
+                  <div class="row">
+                      <div class="col-md-4 p-1 products1BgColor">
+                        <img width="120px" height="100px" src="https://s.alicdn.com/@sc04/kf/He0337fa54e7f495f8e4b94b1e921f4d1a.jpg_120x120xz.jpg" alt="">
+                        <div class="products1-desc1">$2.09</div>
+                        <div class="products1-desc2">Trending Now</div>
+                      </div>
+                      <div class="col-md-4 p-1 products1BgColor">
+                        <img width="120px" height="100px" src="https://s.alicdn.com/@sc04/kf/H31f927438cde49da9310c4f14d1593eaw.jpg_120x120xz.jpg" alt="">
+                        <div class="products1-desc1">$43.00</div>
+                        <div class="products1-desc2">Trending Now</div>
+                      </div>
+                      <div class="col-md-4 p-1 products1BgColor">
+                        <img width="120px" height="100px" src="https://s.alicdn.com/@sc04/kf/Hb4649db2eb994416939ae5e415e0c3276.jpg_120x120xz.jpg" alt="">
+                        <div class="products1-desc1">$1.42</div>
+                        <div class="products1-desc2">Trending Now</div>
+                      </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="p-2 fw-bold">Personal Protective Equipment</div>
+                  <div class="row">
+                      <div class="col-md-4 p-1 products1BgColor">
+                        <img width="120px" height="100px" src="https://s.alicdn.com/@sc04/kf/Hecb3c054dfd040528cedbae34ca8ab01p.jpg_120x120xz.jpg" alt="">
+                        <div class="products1-desc1">$8.40</div>
+                        <div class="products1-desc2">Trending Now</div>
+                      </div>
+                      <div class="col-md-4 p-1 products1BgColor">
+                        <img width="120px" height="100px" src="https://s.alicdn.com/@sc04/kf/H8ab7c0b7c78747bc827ceb4b780eb2d9O.jpg_120x120xz.jpg" alt="">
+                        <div class="products1-desc1">$6.80</div>
+                        <div class="products1-desc2">Trending Now</div>
+                      </div>
+                      <div class="col-md-4 p-1 products1BgColor">
+                        <img width="120px" height="100px" src="https://s.alicdn.com/@sc04/kf/H74826d49740f4e4db9d5fb783d239aeaz.jpg_120x120xz.jpg" alt="">
+                        <div class="products1-desc1">$6.50</div>
+                        <div class="products1-desc2">Trending Now</div>
+                      </div>
+                  </div>
+                </div>
+            </div>
+          </div> 
+
+        </div>
+          <!-- products1 end -->
+
+
+        <!-- products2 start -->
+          <div class="backgroundProducts">
+            <br>
+              <div class="container">
+                <div class="row rounded">
+                    <div class="col-md-4">
+                      <div class="p-2 fw-bold">Dropshipping</div class="text-center">
+                      <div class="row">
+                          <div class="col-md-4 p-1 products1BgColor">
+                            <img width="120px" height="100px" src="https://s.alicdn.com/@sc04/kf/H8dccf24c49d54514a2ac4ea4fddd87f79.jpg_120x120xz.jpg" alt="">
+                            <div class="products1-desc1">$24.00</div>
+                            <div class="products1-desc2">Trending Now</div>
+                          </div>
+                          <div class="col-md-4 p-1 products1BgColor">
+                            <img width="120px" height="100px" src="https://s.alicdn.com/@sc04/kf/Ha0b4b9d0574f4549bcd3473cd404c800j.jpg_120x120xz.jpg" alt="">
+                            <div class="products1-desc1">$1.59</div>
+                            <div class="products1-desc2">Trending Now</div>
+                          </div>
+                          <div class="col-md-4 p-1 products1BgColor">
+                            <img width="120px" height="100px" src="https://s.alicdn.com/@sc04/kf/Hc1b7a5bf15ec4db092302e4b1688c860T.jpg_120x120xz.jpg" alt="">
+                            <div class="products1-desc1">$10.00</div>
+                            <div class="products1-desc2">Trending Now</div>
+                          </div>
+                      </div>
+                    </div>
+          
+                    <div class="col-md-4">
+                      <div class="p-2 fw-bold">Global Original Sources</div>
+                      <div class="row">
+                          <div class="col-md-4 p-1 products1BgColor">
+                            <img width="120px" height="100px" src="https://s.alicdn.com/@sc04/kf/Ha19417648ee1425e8c1c35006bf8f574Q.jpg_120x120xz.jpg" alt="">
+                            <div class="products1-desc1">$40.05</div>
+                            <div class="products1-desc2">Trending Now</div>
+                          </div>
+                          <div class="col-md-4 p-1 products1BgColor">
+                            <img width="120px" height="100px" src="https://s.alicdn.com/@sc04/kf/Haba8be7657eb459ca46567d23fb9f5baV.jpg_120x120xz.jpg" alt="">
+                            <div class="products1-desc1">$0.10</div>
+                            <div class="products1-desc2">Trending Now</div>
+                          </div>
+                          <div class="col-md-4 p-1 products1BgColor">
+                            <img width="120px" height="100px" src="https://s.alicdn.com/@sc04/kf/Hdb84242d5d7346358acf8af75aabfe68O.jpg_120x120xz.jpg" alt="">
+                            <div class="products1-desc1">$2.60</div>
+                            <div class="products1-desc2">Trending Now</div>
+                          </div>
+                      </div>
+                    </div>
+          
+                    <div class="col-md-4">
+                      <div class="p-2 fw-bold">True View</div>
+                      <div class="row">
+                          <div class="col-md-4 p-1 products1BgColor">
+                            <img width="120px" height="100px" src="https://s.alicdn.com/@sc04/kf/He393fd94da754a7a81c77178ed9ab5fa3.jpg_120x120xz.jpg" alt="">
+                            <div class="products1-desc1">$0.03</div>
+                            <div class="products1-desc2">Trending Now</div>
+                          </div>
+                          <div class="col-md-4 p-1 products1BgColor">
+                            <img width="120px" height="100px" src="https://s.alicdn.com/@sc04/kf/Hf18a1b6d4a5a49e5bd2804f374448291B.jpg_120x120xz.jpg" alt="">
+                            <div class="products1-desc1">$8.00</div>
+                            <div class="products1-desc2">Trending Now</div>
+                          </div>
+                          <div class="col-md-4 p-1 products1BgColor">
+                            <img width="120px" height="100px" src="https://s.alicdn.com/@sc04/kf/H92634eaa37fe4cdebfc690789836f29ea.jpg_120x120xz.jpg" alt="">
+                            <div class="products1-desc1">$0.10  </div>
+                            <div class="products1-desc2">Trending Now</div>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+          </div>
+        <!-- products2 end -->
+
+      <!-- Customized products start -->
+          <div class="backgroundProducts">
+            <br>
+            <div class="container">
+              <div class="row rounded bg-white">
+                  <div class="col-md-6">
+                      <div class="row">
+                          <span>
+                              <span class="d-block fs-3 fw-bold p-2">Customized products</span>
+                              <span class="text-secondary">Partner with one of 60,000 experienced manufacturers with design & production capabilities and on-time delivery.</span>
+                          </span>
+                      </div>
+
+                      <div class="row">
+                          <div class="col-md-6">
+                            <div class="row py-3 customized-products-color">
+                              <span class="text-center fw-bold fs-6">Source From Factories</span>
+                              <div class="col-md-3">
+                                <img class="p-2" width="80px" height="80px" src="https://s.alicdn.com/@sc04/kf/H8fb7369ae81544eaaca87918c35eb499n.jpg_100x100xz.jpg" alt="">
+                              </div>
+                              <div class="col-md-3">
+                                <img class="p-2" width="80px" height="80px" src="https://s.alicdn.com/@sc04/kf/H996a7d8c95c64e5988cd7216f3470dd1e.jpg_100x100xz.jpg" alt="">
+                              </div>
+                              <div class="col-md-3">
+                                <img class="p-2" width="80px" height="80px" src="https://s.alicdn.com/@sc04/kf/H0e4d03a4de924c00ad6ad6d2ee2e1d85i.jpg_100x100xz.jpg" alt="">
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-md-6">
+                            <div class="row py-3 customized-products-color">
+                              <span class="text-center fw-bold fs-6">Top Ranking Suppliers</span>
+                              <div class="col-md-3">
+                                <img class="p-2" width="80px" height="80px" src="https://s.alicdn.com/@sc04/kf/H6b6b71a840124d90b2394c0208000b7aq.jpg_100x100xz.jpg" alt="">
+                              </div>
+                              <div class="col-md-3">
+                                <img class="p-2" width="80px" height="80px" src="https://s.alicdn.com/@sc04/kf/H032517fce490403f8a948d2622474619r.jpg_100x100xz.jpg" alt="">
+                              </div>
+                              <div class="col-md-3">
+                                <img class="p-2" width="80px" height="80px" src="https://s.alicdn.com/@sc04/kf/Hb5409f0f940045ad871b8d0a45b242fdk.jpg_100x100xz.jpg" alt="">
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+
+
+                  <div class="col-md-6">
+                    <div class="row">
+                      <span>
+                          <span class="d-block fs-3 fw-bold p-2">Ready-to-ship products</span>
+                          <span class="text-secondary">Source from 15 million products that are ready to ship, and leave the facility within 15 days.</span>
+                      </span>
+                  </div>
+
+                  <div class="row">
+                      <div class="col-md-6">
+                        <div class="row py-3 customized-products-color">
+                          <span class="text-center fw-bold fs-6">Fast Dispatch</span>
+                          <div class="col-md-3">
+                            <img class="p-2" width="80px" height="80px" src="https://s.alicdn.com/@sc04/kf/H33bbdf59942249dfa0620cbadc2bd02ei.jpg_100x100xz.jpg" alt="">
+                          </div>
+                          <div class="col-md-3">
+                            <img class="p-2" width="80px" height="80px" src="https://s.alicdn.com/@sc04/kf/He45e7ab060e24730b0811b9a0f6eedebx.jpg_100x100xz.jpg" alt="">
+                          </div>
+                          <div class="col-md-3">
+                            <img class="p-2" width="80px" height="80px" src="https://s.alicdn.com/@sc04/kf/Hd2e84681e4074b9ea96c27c4ea0f014dh.jpg_100x100xz.jpg" alt="">
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="row py-3 customized-products-color">
+                          <span class="text-center fw-bold fs-6">Weekly Deals</span>
+                          <div class="col-md-3">
+                            <img class="p-2" width="80px" height="80px" src="https://s.alicdn.com/@sc04/kf/H49d8b154297044f0a773f5fc8de6ac8aa.jpg_100x100xz.jpg" alt="">
+                          </div>
+                          <div class="col-md-3">
+                            <img class="p-2" width="80px" height="80px" src="https://s.alicdn.com/@sc04/kf/H1649e439bc28439eb4d5bdec47cde188j.jpg_100x100xz.jpg" alt="">
+                          </div>
+                          <div class="col-md-3">
+                            <img class="p-2" width="80px" height="80px" src="https://s.alicdn.com/@sc04/kf/H6c703eda993944a891386235b99a6d82y.jpg_100x100xz.jpg" alt="">
+                          </div>
+                          <br>
+                        </div>
+                      </div>
+                  </div>
+                  <br>
+                  </div>
+              </div>
+              <br>
+          </div>
+                
+
+
+
+
+          </div>
+      <!-- Customized products end -->
+
+         <!-- Consumer electronics heading start -->
+          <div class="backgroundProducts">
+          <div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 fs-4 fw-bold">
+                        CONSUMER ELECTRONICS
+                    </div>
+
+                    <div class="col-md-9">
+                        <div>
+                          <hr style="border: 4px solid #8a8b8d; border-radius:20px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+          </div>
+        <!-- Consumer electronics heading end -->
+
+
+        <!-- Consumer electronics start -->
+          <div class="backgroundProducts">
+              <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="cons-elec-left p-2">
+                            <div>
+                              <p class="text-white fs-5 p-5">Selected Novelty<br>Products</p>
+                            </div>
+
+                            <div>
+                              <button class="cons-button">Source Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-9">
+                      <div class="bg-white m-0">
+                          <div class="row">
+                              <div class="col-md-6">
+                                    <div class="row">
+                                      <div class="col-md-6">
+                                        <div class="border-end border-bottom">
+                                            <p class="m-0 ps-1 p-2 fw-bold">Premium OEM Factories</p>
+                                            <div class="d-flex justify-end">
+                                                <div class="ms-auto" style="width: 80px;height:80px">
+                                                  <img width="100%" src="https://s.alicdn.com/@sc04/kf/Hc10931f737c745f5aa27ff0fcd1b4459i.png_220x220.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                      </div>
+                                      <div class="col-md-6">
+                                        <div class="border-end border-bottom">
+                                          <p class="m-0 ps-1 p-2 fw-bold">Premium OEM Factories</p>
+                                          <!-- <p class="m-0 ps-1 pb-4">All Categories</p> -->
+                                          <div class="d-flex justify-end">
+                                              <div class="ms-auto" style="width: 80px;height:80px">
+                                                <img width="100%" src="https://s.alicdn.com/@sc04/kf/H3f056ea597324a749185ff90d87a6cb7R.jpg_220x220.jpg" alt="">
+                                              </div>
+                                          </div>
+                                      </div>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-md-6">
+                                        <div class="border-end border-bottom">
+                                          <p class="m-0 ps-1 p-2 fw-bold">Premium OEM Factories</p>
+                                          <!-- <p class="m-0 ps-1 pb-4">include shipping and duty fees</p> -->
+                                          <div class="d-flex justify-end">
+                                              <div class="ms-auto" style="width: 80px;height:80px">
+                                                <img width="100%" src="https://s.alicdn.com/@sc04/kf/Hdff2847ec545403c9452b7c79ede9917Z.jpg_220x220.jpg" alt="">
+                                              </div>
+                                          </div>
+                                      </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <div class="border-end border-bottom">
+                                          <p class="m-0 ps-1 p-2 fw-bold py-auto">Premium OEM Factories</p>
+                                          <div class="d-flex justify-end">
+                                              <div class="ms-auto" style="width: 80px;height:80px">
+                                                <img width="100%" src="https://s.alicdn.com/@sc04/kf/HTB1MQWXaNiH3KVjSZPfq6xBiVXa2.jpg_220x220.jpg" alt="">
+                                              </div>
+                                          </div>
+                                      </div>
+                                      </div>
+                                    </div>
+                              </div>
+                              <div class="col-md-6">
+                                    <div class="row">
+                                      <div class="col-md-6">
+                                        <div class="border-end border-bottom">
+                                          <p class="m-0 ps-1 p-2 fw-bold">Premium OEM Factories</p>
+                                          <div class="d-flex justify-end">
+                                              <div class="ms-auto" style="width: 80px;height:80px">
+                                                <img width="100%" src="https://s.alicdn.com/@sc04/kf/H030054a37d8744a592341b298c616dfaS.jpg_220x220.jpg" alt="">
+                                              </div>
+                                          </div>
+                                      </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <div class="border-end border-bottom">
+                                          <p class="m-0 ps-1 p-2 fw-bold">Premium OEM Factories</p>
+                                          <div class="d-flex justify-end">
+                                              <div class="ms-auto" style="width: 80px;height:80px">
+                                                <img width="100%" src="https://s.alicdn.com/@sc04/kf/He9da36327f6843f4876ca61dc3db680c9.jpg_220x220.jpg" alt="">
+                                              </div>
+                                          </div>
+                                      </div>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-md-6">
+                                        <div class="border-end border-bottom">
+                                          <p class="m-0 ps-1 p-2 fw-bold">Premium OEM Factories</p>
+                                          <div class="d-flex justify-end">
+                                              <div class="ms-auto" style="width: 80px;height:80px">
+                                                <img width="100%" src="https://s.alicdn.com/@sc04/kf/Hc90571ae69544aef8421dcb0ecd00f27Y.jpg_220x220.jpg" alt="">
+                                              </div>
+                                          </div>
+                                      </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <div class="border-end border-bottom">
+                                          <p class="m-0 ps-1 p-2 fw-bold">Premium OEM Factories</p>
+                                          <div class="d-flex justify-end">
+                                              <div class="ms-auto" style="width: 80px;height:80px">
+                                                <img width="100%" src="https://s.alicdn.com/@sc04/kf/H02a9eaf0310c4e878ef867740ffa3aafK.jpg_220x220.jpg" alt="">
+                                              </div>
+                                          </div>
+                                      </div>
+                                      </div>
+                                    </div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+          </div>
+            <br>
+          </div>
+        <!-- Consumer electronics end -->
+
+
+        <!-- Apparel heading end -->
+          <div class="backgroundProducts">
+                <div>
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-md-1 fs-4 fw-bold">
+                              APPAREL
+                          </div>
+
+                          <div class="col-md-11">
+                              <div>
+                                <hr style="border: 4px solid #8a8b8d; border-radius:20px">
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <br>
+          </div>
+        <!-- Apparel heading end -->
+
+
+        <!-- Apparel start -->
+        <div class="backgroundProducts">
+          <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="apparel-left p-2">
+                        <div>
+                          <p class="text-white fs-5 p-5">Shopping Guide for <br>Trending Styles</p>
+                        </div>
+
+                        <div>
+                          <button class="cons-button">Source Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-9">
+                  <div class="bg-white m-0">
+                      <div class="row">
+                          <div class="col-md-6">
+                                <div class="row">
+                                  <div class="col-md-6">
+                                    <div class="border-end border-bottom">
+                                        <p class="m-0 ps-1 p-2 fw-bold">Premium OEM Factories</p>
+                                        <div class="d-flex justify-end">
+                                            <div class="ms-auto" style="width: 80px;height:80px">
+                                              <img width="100%" src="https://s.alicdn.com/@sc04/kf/HTB1eV9JaUGF3KVjSZFoq6zmpFXaL.jpg_220x220.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                  </div>
+                                  <div class="col-md-6">
+                                    <div class="border-end border-bottom">
+                                      <p class="m-0 ps-1 p-2 fw-bold">Premium OEM Factories</p>
+                                      <!-- <p class="m-0 ps-1 pb-4">All Categories</p> -->
+                                      <div class="d-flex justify-end">
+                                          <div class="ms-auto" style="width: 80px;height:80px">
+                                            <img width="100%" src="https://s.alicdn.com/@sc04/kf/He5367da947b94700839b79dee45518fdE.jpg_220x220.jpg" alt="">
+                                          </div>
+                                      </div>
+                                  </div>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-md-6">
+                                    <div class="border-end border-bottom">
+                                      <p class="m-0 ps-1 p-2 fw-bold">Premium OEM Factories</p>
+                                      <!-- <p class="m-0 ps-1 pb-4">include shipping and duty fees</p> -->
+                                      <div class="d-flex justify-end">
+                                          <div class="ms-auto" style="width: 80px;height:80px">
+                                            <img width="100%" src="https://s.alicdn.com/@sc04/kf/Hd87e463271524892843f0c76aad7600ej.jpg_220x220.jpg" alt="">
+                                          </div>
+                                      </div>
+                                  </div>
+                                  </div>
+                                  <div class="col-md-6">
+                                    <div class="border-end border-bottom">
+                                      <p class="m-0 ps-1 p-2 fw-bold py-auto">Premium OEM Factories</p>
+                                      <div class="d-flex justify-end">
+                                          <div class="ms-auto" style="width: 80px;height:80px">
+                                            <img width="100%" src="https://s.alicdn.com/@sc04/kf/Had11f67b44344daf9d830d0dceff54b19.jpg_220x220.jpg" alt="">
+                                          </div>
+                                      </div>
+                                  </div>
+                                  </div>
+                                </div>
+                          </div>
+                          <div class="col-md-6">
+                                <div class="row">
+                                  <div class="col-md-6">
+                                    <div class="border-end border-bottom">
+                                      <p class="m-0 ps-1 p-2 fw-bold">Premium OEM Factories</p>
+                                      <div class="d-flex justify-end">
+                                          <div class="ms-auto" style="width: 80px;height:80px">
+                                            <img width="100%" src="https://s.alicdn.com/@sc04/kf/Hcc98420451124afc817c74455ac5ed43n.jpg_220x220.jpg" alt="">
+                                          </div>
+                                      </div>
+                                  </div>
+                                  </div>
+                                  <div class="col-md-6">
+                                    <div class="border-end border-bottom">
+                                      <p class="m-0 ps-1 p-2 fw-bold">Premium OEM Factories</p>
+                                      <div class="d-flex justify-end">
+                                          <div class="ms-auto" style="width: 80px;height:80px">
+                                            <img width="100%" src="https://s.alicdn.com/@sc04/kf/Hf2c6926bc69f45c9936d4a9d46be5a81n.jpg_220x220.jpg" alt="">
+                                          </div>
+                                      </div>
+                                  </div>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-md-6">
+                                    <div class="border-end border-bottom">
+                                      <p class="m-0 ps-1 p-2 fw-bold">Premium OEM Factories<p>
+                                      <div class="d-flex justify-end">
+                                          <div class="ms-auto" style="width: 80px;height:80px">
+                                            <img width="100%" src="https://s.alicdn.com/@sc04/kf/HTB19xqadA5E3KVjSZFCq6zuzXXaf.jpg_220x220.jpg" alt="">
+                                          </div>
+                                      </div>
+                                  </div>
+                                  </div>
+                                  <div class="col-md-6">
+                                    <div class="border-end border-bottom">
+                                      <p class="m-0 ps-1 p-2 fw-bold">Premium OEM Factories</p>
+                                      <div class="d-flex justify-end">
+                                          <div class="ms-auto" style="width: 80px;height:80px">
+                                            <img width="100%" src="https://s.alicdn.com/@sc04/kf/HTB13pqBXJfvK1RjSspoq6zfNpXaE.jpg_220x220.jpg" alt="">
+                                          </div>
+                                      </div>
+                                  </div>
+                                  </div>
+                                </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+            </div>
+      </div>
+        <br>
+        </div>
+        <!-- Apparel end -->
+
+
+        <!-- Vehicle Parts & Accessories heading start -->
+        <div class="backgroundProducts">
+            <div>
+              <div class="container">
+                  <div class="row">
+                      <div class="col-md-4 fs-4 fw-bold">
+                          VEHICLE PARTS & ACCESSORIES
+                      </div>
+
+                      <div class="col-md-8">
+                          <div>
+                            <hr style="border: 4px solid #8a8b8d; border-radius:20px">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <br>
+        </div>
+        <!-- Vehicle Parts & Accessories heading end -->
+
+
+        <!-- Vehicle Accessories and parts start -->
+        <div class="backgroundProducts">
+          <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="vehicle-accessories-left p-2">
+                        <div>
+                          <p class="text-white fs-5 p-5">Diversified Procurement<br>Solutions</p>
+                        </div>
+
+                        <div>
+                          <button class="cons-button">Source Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-9">
+                  <div class="bg-white m-0">
+                      <div class="row">
+                          <div class="col-md-6">
+                                <div class="row">
+                                  <div class="col-md-6">
+                                    <div class="border-end border-bottom">
+                                        <p class="m-0 ps-1 p-2 fw-bold">Premium OEM Factories</p>
+                                        <div class="d-flex justify-end">
+                                            <div class="ms-auto" style="width: 80px;height:80px">
+                                              <img width="100%" src="https://s.alicdn.com/@sc04/kf/HTB1il_4aIrrK1Rjy1zeq6xalFXa1.jpg_220x220.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                  </div>
+                                  <div class="col-md-6">
+                                    <div class="border-end border-bottom">
+                                      <p class="m-0 ps-1 p-2 fw-bold">Premium OEM Factories</p>
+                                      <!-- <p class="m-0 ps-1 pb-4">All Categories</p> -->
+                                      <div class="d-flex justify-end">
+                                          <div class="ms-auto" style="width: 80px;height:80px">
+                                            <img width="100%" src="https://s.alicdn.com/@sc04/kf/Hdd52c8daa7014288ac92f9471141fefaP.jpg_220x220.jpg" alt="">
+                                          </div>
+                                      </div>
+                                  </div>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-md-6">
+                                    <div class="border-end border-bottom">
+                                      <p class="m-0 ps-1 p-2 fw-bold">Premium OEM Factories</p>
+                                      <!-- <p class="m-0 ps-1 pb-4">include shipping and duty fees</p> -->
+                                      <div class="d-flex justify-end">
+                                          <div class="ms-auto" style="width: 80px;height:80px">
+                                            <img width="100%" src="https://s.alicdn.com/@sc04/kf/HTB1Upupi13tHKVjSZSgq6x4QFXav.jpg_220x220.jpg" alt="">
+                                          </div>
+                                      </div>
+                                  </div>
+                                  </div>
+                                  <div class="col-md-6">
+                                    <div class="border-end border-bottom">
+                                      <p class="m-0 ps-1 p-2 fw-bold py-auto">Premium OEM Factories</p>
+                                      <div class="d-flex justify-end">
+                                          <div class="ms-auto" style="width: 80px;height:80px">
+                                            <img width="100%" src="https://s.alicdn.com/@sc04/kf/He2ced669ee534bdba96e4752fc7b8e941.jpg_220x220.jpg" alt="">
+                                          </div>
+                                      </div>
+                                  </div>
+                                  </div>
+                                </div>
+                          </div>
+                          <div class="col-md-6">
+                                <div class="row">
+                                  <div class="col-md-6">
+                                    <div class="border-end border-bottom">
+                                      <p class="m-0 ps-1 p-2 fw-bold">Premium OEM Factories</p>
+                                      <div class="d-flex justify-end">
+                                          <div class="ms-auto" style="width: 80px;height:80px">
+                                            <img width="100%" src="https://s.alicdn.com/@sc04/kf/H78adad5a7c244b0c95d7e8ffb6d3bb94u.jpg_220x220.jpg" alt="">
+                                          </div>
+                                      </div>
+                                  </div>
+                                  </div>
+                                  <div class="col-md-6">
+                                    <div class="border-end border-bottom">
+                                      <p class="m-0 ps-1 p-2 fw-bold">Premium OEM Factories</p>
+                                      <div class="d-flex justify-end">
+                                          <div class="ms-auto" style="width: 80px;height:80px">
+                                            <img width="100%" src="https://s.alicdn.com/@sc04/kf/H024af275ad0e47aca2eb8ae50be891bf3.jpg_220x220.jpg" alt="">
+                                          </div>
+                                      </div>
+                                  </div>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-md-6">
+                                    <div class="border-end border-bottom">
+                                      <p class="m-0 ps-1 p-2 fw-bold">Premium OEM Factories<p>
+                                      <div class="d-flex justify-end">
+                                          <div class="ms-auto" style="width: 80px;height:80px">
+                                            <img width="100%" src="https://s.alicdn.com/@sc04/kf/H61a3584314284170bf8e5f715796185eM.jpg_220x220.jpg" alt="">
+                                          </div>
+                                      </div>
+                                  </div>
+                                  </div>
+                                  <div class="col-md-6">
+                                    <div class="border-end border-bottom">
+                                      <p class="m-0 ps-1 p-2 fw-bold">Premium OEM Factories</p>
+                                      <div class="d-flex justify-end">
+                                          <div class="ms-auto" style="width: 70px;height:70px">
+                                            <img width="100%" src="https://s.alicdn.com/@sc04/kf/HTB17zUlHFXXXXXOXpXXq6xXFXXX8.jpg_220x220.jpg" alt="">
+                                          </div>
+                                      </div>
+                                  </div>
+                                  </div>
+                                </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+            </div>
+      </div>
+        <br>
+        </div>
+        <!-- Vehicle Accessories and parts end -->
+
+        <!-- Weekly Deals heading start -->
+        <div class="backgroundProducts">   
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="row">
+                            <div class="col-md-5">
+                                <div class="fs-5 fw-bold">
+                                    WEEKLY DEALS
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                              <div>
+                                <hr style="border: 4px solid #8a8b8d; border-radius:20px">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                    <div class="col-md-4">
+                      <div class="row">
+                        <div class="col-md-9">
+                          <div class="fs-5 fw-bold">
+                            ALIBABA.COM LIVESTREAMS
+                        </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div>
+                            <hr style="border: 4px solid #8a8b8d; border-radius:20px">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="row">
+                            <div class="col-md-11">
+                              <div class="fs-5 fw-bold">
+                                SMALL COMMODITITES MARKETPLACE
+                              </div>
+                            </div>
+
+                            <div class="col-md-1">
+                              <div>
+                                <hr style="border: 4px solid #8a8b8d; border-radius:20px">
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <br>
+                  </div>
+        </div>
+        <!-- Weekly Deals heading start -->
+
+        <!-- Weekly Deals start -->
+            <div class="backgroundProducts">
+                <div class="container">
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-md-4">
+                            <div class="d-flex justify-content-evenly bg-white wkd">
+                                <div class="p-2">
+                                  <img height="120px" width="120px" src="https://s.alicdn.com/@sc04/kf/H283b56c0b1d64fdd86919ef9c514d369W.jpg_220x220.jpg" alt="">
+                                  <button class="view-more d-block">View More<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right ps-1" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                  </svg></button>
+                                </div>
+                                
+                                <div class="p-2">
+                                  <img height="120px" width="120px" src="https://s.alicdn.com/@sc04/kf/H549ef07a4f9d411b80bce44690e0c39bi.jpg_220x220.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-4">
+                          <div class="d-flex justify-content-evenly bg-white wkd">
+                            <div class="p-2">
+                              <img height="120px" width="120px" src="https://s.alicdn.com/@sc04/kf/H6af77d8f42e44ebd99e4c637efeedc766.jpg_220x220.jpg" alt="">
+                              <button class="view-more d-block">View More<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right ps-1" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                              </svg></button>
+                            </div>
+                            
+                            <div class="p-2">
+                              <img height="120px" width="120px" src="https://s.alicdn.com/@sc04/kf/H68c446353c964ae3b03415389730bfca0.jpg_220x220.jpg" alt="">
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="col-md-4">
+                          <div class="d-flex justify-content-evenly bg-white wkd">
+                            <div class="p-2">
+                              <img height="120px" width="120px" src="https://s.alicdn.com/@sc04/kf/S03fe61ade6c94150aeee3aff7d65dbb2G.jpg_220x220.jpg" alt="">
+                              <button class="view-more d-block">View More<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right ps-1" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                              </svg></button>
+                            </div>
+                            
+                            <div class="p-2">
+                              <img height="120px" width="120px" src="https://s.alicdn.com/@sc04/kf/H8ae44fede9604376bca7841fc07b12aeK.jpg_220x220.jpg" alt="">
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </div>
+        <!-- Weekly Deals end -->
+
+        <!-- Request for quotation heading start -->
+            <div class="backgroundProducts">
+              <div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 fs-4 fw-bold">
+                            REQUEST FOR QUOTATION
+                        </div>
+
+                        <div class="col-md-9">
+                            <div>
+                              <hr style="border: 4px solid #8a8b8d; border-radius:20px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <br>
+            </div>
+        <!-- Request for quotation heading end -->
+          
+        <!-- Request for quotation start -->
+            <div class="backgroundProducts">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="ReqQuotationLeft">
+                                <div class="text-white fs-2 ps-5 pt-5">
+                                  Global Sourcing Marketplace
+                                </div>
+                                <div class="text-white fw-bold fs-4 ps-5 pt-2">
+                                  2761000 + <span class="fw-bold fs-4 ps-5">21h
+                                  </span>
+                                  <br>
+                                  <span class="text-white fs-6 fw-normal">RFQs</span>
+                                </div>
+                                <div class="text-white fw-bold fs-4 ps-5 pt-2">
+                                  176000 + <span class="fw-bold fs-4 ps-5">6968
+                                  </span>
+                                  <br>
+                                  <span class="text-white fs-6 fw-normal">Active Suppliers</span>
+                                </div>
+                                <button class="ReqQuotationLeftBtn text-white">Learn More</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="ReqQuotationRight bg-white">
+                                <div class="fs-2 fw-bolder ps-5 pt-4">
+                                    One Request, Multiple Quotes
+                                </div>
+                                <div class="ps-5 pt-5">
+                                    <form action="#">
+                                        <input class="p-2 border" type="text" name="30" id="" size="40" placeholder="What are you looking for..."> <br><br>
+                                        <input class="p-2 border" type="text" name="" id="" placeholder="Quantity">
+                                    </form>
+
+                                    <button class="ReqQuotationRightBtn mt-4">Request For Quotation</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </div>
+        <!-- Request for quotation end -->
+
+        <!-- Just for you heading start -->
+            <div class="backgroundProducts">
+              <div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2 fs-4 fw-bold">
+                            JUST FOR YOU
+                        </div>
+      
+                        <div class="col-md-10">
+                            <div>
+                              <hr style="border: 4px solid #8a8b8d; border-radius:20px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <br>
+            </div>
+        <!-- Just for you heading end -->
+
+        <!-- Just for you start -->
+            <div class="backgroundProducts">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2 p-1">
+                            <div class="bg-white">
+                              <img height="214px" width="214px" src="https://s.alicdn.com/@sc04/kf/H3cf01108bd6e43adb53caba6916ad880v.jpg_250x250.jpg" alt="">
+                              <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet dolorum eos ipsum qui architecto, sit vel amet assumenda at. Consequatur?</p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 p-1">
+                          <div class="bg-white">
+                            <img height="214px" width="214px" src="https://s.alicdn.com/@sc04/kf/H6467304445334ef7b899206a0c7e1c76y.jpg_250x250.jpg" alt="">
+                            <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet dolorum eos ipsum qui architecto, sit vel amet assumenda at. Consequatur?</p>
+                          </div>
+                        </div>
+                        <div class="col-md-2 p-1">
+                          <div class="bg-white">
+                            <img height="214px" width="214px" src="https://s.alicdn.com/@sc04/kf/H43b5b4c67ade4faeb79785b96d705c7cT.jpg_250x250.jpg" alt="">
+                            <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet dolorum eos ipsum qui architecto, sit vel amet assumenda at. Consequatur?</p>
+                          </div>
+                        </div>
+                        <div class="col-md-2 p-1">
+                          <div class="bg-white">
+                            <img height="214px" width="214px" src="https://s.alicdn.com/@sc04/kf/U6c9da7879c0941abb6f3d033f9a529e2n.jpg_250x250.jpg" alt="">
+                            <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet dolorum eos ipsum qui architecto, sit vel amet assumenda at. Consequatur?</p>
+                          </div>
+                        </div>
+                        <div class="col-md-2 p-1">
+                          <div class="bg-white">
+                            <img height="214px" width="214px" src="https://s.alicdn.com/@sc04/kf/H2e4834851801452289e26b435744e491f.jpg_250x250.jpg" alt=""><p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet dolorum eos ipsum qui architecto, sit vel amet assumenda at. Consequatur?</p>
+                          </div>
+                        </div>
+                        <div class="col-md-2 p-1">
+                          <div class="bg-white">
+                            <img height="214px" width="214px" src="https://s.alicdn.com/@sc04/kf/Hd03dbf5919964bc9b3f44a903afe8c42D.jpg_250x250.jpg" alt="">
+                            <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet dolorum eos ipsum qui architecto, sit vel amet assumenda at. Consequatur?</p>
+                          </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                      <div class="col-md-2 p-1">
+                          <div class="bg-white">
+                            <img height="214px" width="214px" src="https://s.alicdn.com/@sc04/kf/Hbd63faf4bf6744349065fe3ed41b9934a.jpg_250x250.jpg" alt="">
+                            <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet dolorum eos ipsum qui architecto, sit vel amet assumenda at. Consequatur?</p>
+                          </div>
+                      </div>
+                      <div class="col-md-2 p-1">
+                        <div class="bg-white">
+                          <img height="214px" width="214px" src="https://s.alicdn.com/@sc04/kf/H1f3b0b65a41b4db19fc39750cebce2b2h.jpg_250x250.jpg" alt="">
+                          <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet dolorum eos ipsum qui architecto, sit vel amet assumenda at. Consequatur?</p>
+                        </div>
+                      </div>
+                      <div class="col-md-2 p-1">
+                        <div class="bg-white">
+                          <img height="214px" width="214px" src="https://s.alicdn.com/@sc04/kf/He343bb6fff74473582d0aa75c636794dr.jpg_250x250.jpg" alt="">
+                          <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet dolorum eos ipsum qui architecto, sit vel amet assumenda at. Consequatur?</p>
+                        </div>
+                      </div>
+                      <div class="col-md-2 p-1">
+                        <div class="bg-white">
+                          <img height="214px" width="214px" src="https://s.alicdn.com/@sc04/kf/H6b15e13a62c74dd9a3f59290809a7d8cm.jpg_250x250.jpg" alt="">
+                          <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet dolorum eos ipsum qui architecto, sit vel amet assumenda at. Consequatur?</p>
+                        </div>
+                      </div>
+                      <div class="col-md-2 p-1">
+                        <div class="bg-white">
+                          <img height="214px" width="214px" src="images/justForYouSecondLastProductImg.png" alt="">
+                          <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet dolorum eos ipsum qui architecto, sit vel amet assumenda at. Consequatur?</p>
+                        </div>
+                      </div>
+                      <div class="col-md-2 p-1">
+                        <div class="bg-white">
+                          <img height="214px" width="214px" src="https://s.alicdn.com/@sc04/kf/H388a1a4e234e4d70993b3a02a310fe78y.jpg_250x250.jpg" alt="">
+                          <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet dolorum eos ipsum qui architecto, sit vel amet assumenda at. Consequatur?</p>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <br>
+            </div>
+        <!-- Just for you end -->
+
+        <!-- our trade heading start -->
+            <div class="backgroundProducts">
+              <div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 fs-5 fw-bold ourTradeHeading">
+                            OUR TRADE SERVICES ARE HERE FOR YOU
+                        </div>
+      
+                        <div class="col-md-8 ">
+                            <div>
+                              <hr style="border: 4px solid #8a8b8d; border-radius:20px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+        <!-- our trade heading end -->
+
+        <!-- our trade heading 2 start -->
+            <div class="backgroundProducts">
+                <div class="container">
+                  <span class="ourTradeHeading2">Alibaba.com's trade service help ensure that your purchases are protected</span>
+                </div>
+                <br>
+            </div>
+        <!-- our trade heading 2 end -->
+
+        <!-- our trade start -->
+            <div class="backgroundProducts">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="ourTradeImg1">
+                                <img width="100%" height="200px" src="//s.alicdn.com/@img/tfs/TB1uRJAxnqWBKNjSZFxXXcpLpXa-1180-360.png" alt="">
+                            </div>
+                            <div style="width: 100%;" class="bg-white p-3">
+                                <span class="fw-bold">Trade Assurance</span>
+                                <div class="ourTradeText">ORDER PROTECTION</div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                          <div class="ourTradeImg2">
+                                <img width="100%" height="200px" src="//s.alicdn.com/@img/imgextra/i3/O1CN017MSDFT1euu038qE9l_!!6000000003932-0-tps-1180-360.jpg" alt="">
+                          </div>
+                          <div style="width: 100%;" class="bg-white p-3">
+                            <span class="fw-bold">Payment</span>
+                                <div class="ourTradeText">PAYMENT SOLUTION</div>
+                        </div>
+                        </div>
+
+                        <div class="col-md-3">
+                          <div class="ourTradeImg3">
+                                <img width="100%" height="200px" src="//s.alicdn.com/@img/tfs/TB10TSmw67nBKNjSZLeXXbxCFXa-1180-360.png" alt="">
+                          </div>
+                          <div style="width: 100%;" class="bg-white p-3">
+                            <span class="fw-bold">Inspection Solution</span>
+                                <div class="ourTradeText">INSPECTION</div>
+                        </div>
+                        </div>
+
+                        <div class="col-md-3">
+                          <div class="ourTradeImg4">
+                                <img width="100%" height="200px" src="//s.alicdn.com/@img/tfs/TB17KqGN7zoK1RjSZFlXXai4VXa-1180-360.png" alt="">
+                          </div>
+                          <div style="width: 100%;" class="bg-white p-3">
+                            <span class="fw-bold">Ocean and air shipping</span>
+                                <div class="ourTradeText">LOGISTICS SERVICE</div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </div>
+        <!-- our trade end -->
+
+        <!-- Choose your suppliers heading start -->
+            <div class="backgroundProducts">
+              <div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 fs-5 fw-bold ourTradeHeading">
+                            CHOOSE YOUR SUPPLIERS BY REGION
+                        </div>
+      
+                        <div class="col-md-8 ">
+                            <div>
+                              <hr style="border: 4px solid #8a8b8d; border-radius:20px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+        <!-- Choose your suppliers heading end -->
+
+        <!-- Choose your suppliers start -->
+            <div class="backgroundProducts">
+                <div class="container">
+                  <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                          <li class="nav-item">
+                            <a class="nav-link active p-3" aria-current="page" href="#">Russia</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active p-3 pe-4" aria-current="page" href="#">USA</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active p-3 pe-4" aria-current="page" href="#">Italy</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active p-3 pe-4" aria-current="page" href="#">Turkey</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active p-3 pe-4" aria-current="page" href="#">Thailand</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active p-3 pe-4" aria-current="page" href="#">Malaysia</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active p-3 pe-4" aria-current="page" href="#">South Korea</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active p-3 pe-4" aria-current="page" href="#">Vietnam</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active p-3 pe-4" aria-current="page" href="#">Japan</a>
+                          </li>
+                          <li class="nav-item d-flex justify-content-end">
+                            <a class="nav-link active p-3 pe-4" aria-current="page" href="#">More Regions</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+                </div>
+            </div>
+        <!-- Choose your suppliers end -->
+
+
+
+        <!-- bottom banner start -->
+        <div class="backgroundProducts">
+              <div class="banner2 d-flex justify-content-center">
+                <a href=""><img src="//i.alicdn.com/img/imgextra/i3/O1CN01Oenc7u1zgnn6Z7E0q_!!6000000006744-0-tps-1500-60.jpg" alt=""></a>
+              </div>
+        </div>
+        <!-- bottom banner end -->
+            
+      </div>
+
+
+
+      
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
